@@ -69,6 +69,8 @@ const Wrapper = styled.section`
         justify-self: center;
         margin-top: 1rem;
         font-size: 1.1rem;
+        border-radius: 0.6rem;
+        cursor: pointer;
     }
 
     .hide-navbar {
@@ -131,8 +133,6 @@ const Wrapper = styled.section`
 const Header = () => {
     const { isNavbarOpen, setIsNavbarOpen, mode, handleMode } =
         useGlobalContext();
-
-    console.log(isNavbarOpen);
 
     return (
         <Wrapper id="home">
