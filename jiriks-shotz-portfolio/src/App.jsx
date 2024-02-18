@@ -1,24 +1,34 @@
-import About from "./components/About";
-import Footer from "./components/Footer";
-import Services from "./components/Services";
-import { Navbar, Hero } from "./components/index";
+import {
+    Header,
+    Hero,
+    About,
+    Footer,
+    Search,
+    Services,
+    Gallery,
+} from "./components/index";
 
 const App = () => {
     return (
         <>
             <header>
-                <h1>
-                    jiriks<span>shotz</span>
-                </h1>
-                <Navbar />
+                <section className="header-sub-container">
+                    <Header />
+                </section>
             </header>
             <main>
-                <Hero />
-                <About />
-                <Services />
+                <section className="main-sub-container">
+                    <Hero />
+                    <About />
+                    <Services />
+                    <Search />
+                    <Gallery />
+                </section>
             </main>
             <footer>
-                <Footer />
+                <section className="footer-sub-container">
+                    <Footer />
+                </section>
             </footer>
         </>
     );
