@@ -7,20 +7,21 @@ import styled from "styled-components";
 const LoadingWrapper = styled.section`
     .loader {
         width: 150px;
-        height: 24.5px;
-        background-color: #0f766e;
+        height: max-content;
+        background-image: linear-gradient(to right, #d97706, #78350f);
         border-radius: 10px;
         margin: 4rem auto;
         box-shadow: 0 0 0.35rem;
     }
 
     .loader p {
-        background-color: #ccfbf1;
+        background-image: linear-gradient(to right, #fcd34d, #fffbeb);
         width: 45px;
         text-align: center;
         border-radius: 10px;
         margin: 0;
         padding: 0;
+        box-shadow: 0 0 0.15rem;
     }
 
     .loader p {
@@ -122,7 +123,7 @@ const Gallery = () => {
         queryKey: ["search", `${searchValue === "" ? "wedding" : searchValue}`],
         queryFn: async () => {
             const response = await axios(
-                `http://localhost:5001/search-photos/${searchValue}`
+                `https://jiriks-shotz.onrender.com/search-photos/${searchValue}`
             );
             return response.data.results;
         },

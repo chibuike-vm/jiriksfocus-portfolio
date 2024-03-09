@@ -8,7 +8,7 @@ export const useGlobalContext = () => useContext(AppContext);
 const ContextAPI = ({ children }) => {
     const [searchValue, setSearchValue] = useState("wedding");
     const [mode, setMode] = useState(
-        window.matchMedia("(prefers-color-scheme: dark").matches || false
+        window.matchMedia("(prefers-color-scheme: dark)").matches || false
     );
     const [isNavbarOpen, setIsNavbarOpen] = useState(false);
 
@@ -31,7 +31,7 @@ const ContextAPI = ({ children }) => {
         localStorage.setItem("mode", mode);
 
         if (localStorage.getItem("mode") === "true") {
-            document.querySelector("body").classList.toggle("darkmode");
+            document.querySelector("body").classList.add("darkmode");
         }
     }, []);
 

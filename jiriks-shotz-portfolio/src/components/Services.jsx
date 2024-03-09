@@ -7,12 +7,11 @@ const Wrapper = styled.section`
     margin-top: 5rem;
 
     div {
-        margin-top: 1rem;
+        margin-top: 3rem;
         padding: 1rem;
         width: 100%;
-        background-color: #99f6e4;
-        border-radius: 2px;
-        box-shadow: 0 0 0.08rem;
+        border-radius: 10px;
+        box-shadow: 0 0 0.5rem;
     }
 
     h2 {
@@ -31,13 +30,15 @@ const Wrapper = styled.section`
         div {
             width: 20rem;
             padding: 0;
+            margin-top: 0rem;
         }
 
         article {
             display: grid;
             grid-template-columns: repeat(2, max-content);
             justify-content: space-evenly;
-            grid-row-gap: 0.5rem;
+            grid-row-gap: 4rem;
+            grid-column-gap: 3rem;
         }
     }
 

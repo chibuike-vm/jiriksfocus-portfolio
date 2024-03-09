@@ -12,7 +12,7 @@ const Wrapper = styled.section`
     top: 0;
     z-index: 20;
     box-shadow: 0 0 0.4rem;
-    background-color: #0f766e;
+    background-image: linear-gradient(to right, #d97706, #78350f);
 
     .header-container {
         margin: 0 auto;
@@ -36,7 +36,7 @@ const Wrapper = styled.section`
 
     a {
         text-decoration: none;
-        color: black;
+        color: #451a03;
     }
 
     .nav-container {
@@ -45,7 +45,7 @@ const Wrapper = styled.section`
         grid-auto-rows: min-content;
         position: fixed;
         z-index: 10;
-        background-color: #99f6e4;
+        background-image: linear-gradient(to right, #fcd34d, #fffbeb);
         top: 0;
         left: 0;
         right: 0;
@@ -58,19 +58,23 @@ const Wrapper = styled.section`
         grid-template-columns: repeat(2, min-content);
         grid-column-gap: 1rem;
         padding-bottom: 1rem;
+        align-items: center;
     }
 
     .close-button {
         justify-self: end;
         margin-bottom: 1rem;
+        color: #451a03;
+        font-size: 1.5rem;
     }
 
-    .mode-container {
+    .mode-button {
         justify-self: center;
         margin-top: 1rem;
-        font-size: 1.1rem;
+        font-size: 1.5rem;
         border-radius: 0.6rem;
         cursor: pointer;
+        color: #451a03;
     }
 
     .hide-navbar {
@@ -78,7 +82,17 @@ const Wrapper = styled.section`
     }
 
     span {
-        color: #fed7aa;
+        color: #fef9c3;
+    }
+
+    .menu-button {
+        font-size: 1.5rem;
+        color: #e5e7eb;
+    }
+
+    .icon {
+        font-size: 1.3rem;
+        color: black;
     }
 
     @media only screen and (width >= 768px) {
@@ -87,6 +101,7 @@ const Wrapper = styled.section`
         display: grid;
         grid-template-columns: 1fr 2fr;
         box-shadow: 0 0 0;
+        background-image: none;
 
         .icon,
         .close-button,
@@ -103,16 +118,18 @@ const Wrapper = styled.section`
             justify-items: end;
             align-items: center;
             grid-column-gap: 0.5rem;
+            background-image: none;
         }
 
         .header-container {
             width: 100%;
         }
 
-        .mode-container {
+        .mode-button {
             justify-self: center;
             margin-top: 0;
             margin-left: auto;
+            color: #fffbeb;
         }
 
         .links-container {
@@ -140,37 +157,30 @@ const Header = () => {
                 <h1>
                     Jiriks<span>Focus</span>
                 </h1>
-                <button
-                    type="button"
+
+                <IoMdMenu
                     onClick={() => setIsNavbarOpen(!isNavbarOpen)}
                     className="menu-button"
-                >
-                    <IoMdMenu />
-                </button>
+                />
             </article>
 
             <nav
                 className={`nav-container ${isNavbarOpen ? "" : "hide-navbar"}`}
             >
-                <button
-                    type="button"
+                <IoMdClose
                     onClick={() => setIsNavbarOpen(!isNavbarOpen)}
                     className="close-button"
-                >
-                    <IoMdClose />
-                </button>
+                />
 
                 {links.map((eachLink) => {
                     const { id, text, href, icon } = eachLink;
 
                     return (
                         <div key={id} className="links-container">
-                            <button type="button" className="icon">
-                                {icon}
-                            </button>
+                            {icon}
+
                             <a
                                 href={href}
-                                alt={text}
                                 onClick={() => setIsNavbarOpen(!isNavbarOpen)}
                             >
                                 <h2>{text}</h2>
@@ -179,13 +189,11 @@ const Header = () => {
                     );
                 })}
 
-                <button
-                    type="button"
-                    onClick={handleMode}
-                    className="mode-container"
-                >
-                    {mode ? <MdDarkMode /> : <MdLightMode />}
-                </button>
+                {mode ? (
+                    <MdDarkMode onClick={handleMode} className="mode-button" />
+                ) : (
+                    <MdLightMode onClick={handleMode} className="mode-button" />
+                )}
             </nav>
         </Wrapper>
     );

@@ -13,12 +13,13 @@ const Wrapper = styled.section`
         width: 70%;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
+        padding-left: 0.5rem;
     }
 
     input[type="submit"] {
         width: 30%;
-        background-color: #0d9488;
-        color: #f0fdfa;
+        background-color: #1f2937;
+        color: #f9fafb;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
     }

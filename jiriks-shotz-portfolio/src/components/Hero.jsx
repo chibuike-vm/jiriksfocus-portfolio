@@ -17,7 +17,7 @@ const Wrapper = styled.section`
         display: inline-block;
         width: 2px;
         height: 30px;
-        background-color: #042f2e;
+        background-color: #451a03;
         animation: blink-animation 1s infinite step-start;
         transform: translateY(25%);
     }
@@ -29,14 +29,15 @@ const Wrapper = styled.section`
     }
 
     p {
-        font-size: 1.3rem;
+        font-size: 1.35rem;
         letter-spacing: 0.1rem;
         line-height: 2;
         text-align: center;
+        font-weight: 700;
     }
 
     @media only screen and (width >= 768px) {
-        margin-top: 2rem;
+        margin-top: 6rem;
     }
 `;
 
