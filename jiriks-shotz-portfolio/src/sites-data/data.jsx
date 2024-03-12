@@ -17,19 +17,34 @@ import { FcAbout } from "react-icons/fc";
 import { IoMdPhotos } from "react-icons/io";
 
 export const links = [
-    { id: nanoid(), text: "home", href: "#home", icon: <FaHome /> },
-    { id: nanoid(), text: "about", href: "#about", icon: <FcAbout /> },
+    {
+        id: nanoid(),
+        text: "home",
+        href: "#home",
+        icon: <FaHome className="icon" />,
+    },
+    {
+        id: nanoid(),
+        text: "about",
+        href: "#about",
+        icon: <FcAbout className="icon" />,
+    },
     {
         id: nanoid(),
         text: "services",
         href: "#services",
-        icon: <FaCameraRetro />,
+        icon: <FaCameraRetro className="icon" />,
     },
-    { id: nanoid(), text: "gallery", href: "#gallery", icon: <IoMdPhotos /> },
+    {
+        id: nanoid(),
+        text: "gallery",
+        href: "#gallery",
+        icon: <IoMdPhotos className="icon" />,
+    },
 ];
 
 export const descriptiveText =
-    "I am Ihejirika, an astute and a professional photographer with lots of feathers on my cap.";
+    "I am Jiriks, an astute and a professional photographer with lots of feathers on my cap.";
 
 export const services = [
     {
