@@ -397,16 +397,17 @@ html {
 
 header {
     box-shadow: 0 0 0.4rem;
-    background-color: #0f766e;
+    background-image: linear-gradient(to right, #d97706, #78350f);
 }
 
 footer {
     box-shadow: 0 0 0.4rem;
-    background-color: #0f766e;
+    background-image: linear-gradient(to right, #d97706, #78350f);
 }
 
 body {
-    background-color: #ccfbf1;
+    background-image: linear-gradient(to right, #fcd34d, #fffbeb);
+    color: #451a03;
 }
 
 /*
@@ -414,26 +415,30 @@ body {
     ===============
 */
 .darkmode {
-    background-color: #042f2e;
-    color: #042f2e;
+    background-image: linear-gradient(to right, #92400e, #451a03);
+    color: #fffbeb;
 }
 
 .darkmode h2,
 .darkmode h3,
 .darkmode p,
-.darkmode .loader p {
-    color: #f0fdfa;
+.darkmode .loader p,
+.darkmode nav > .close-button,
+.darkmode div > .icon,
+.darkmode nav > .mode-button {
+    color: #fffbeb;
 }
 
-.darkmode .about-container,
-.darkmode .service-container,
-.darkmode .loader > div > p,
+.darkmode .loader > div > p {
+    background-image: linear-gradient(to right, #451a03, #78350f, #854d0e);
+}
+
 .darkmode nav.nav-container {
-    background-color: #134e4a;
+    background-image: linear-gradient(to right, #92400e, #451a03);
 }
 
 .darkmode span.cursor {
-    background-color: #99f6e4;
+    background-color: #fffbeb;
 }
 
 /*
@@ -441,7 +446,7 @@ body {
     ======================
 */
 p {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     letter-spacing: 0.1rem;
     line-height: 1.3;
     padding: 0.5rem;
@@ -455,6 +460,17 @@ p {
 }
 
 @media only screen and (width >= 768px) {
+    header {
+        position: fixed;
+        right: 0;
+        left: 0;
+        top: 0;
+    }
+
+    .darkmode nav.nav-container {
+        background-image: none;
+    }
+
     .svg-images {
         width: 18rem;
         height: 13rem;
@@ -465,6 +481,6 @@ p {
     }
 
     .nav-container h2 {
-        color: #f0fdfa;
+        color: #fffbeb;
     }
 }
