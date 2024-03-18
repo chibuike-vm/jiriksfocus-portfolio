@@ -1,10 +1,10 @@
-# Jiriks Portfolio
+# JiriksFocus
 
-Welcome to the Jiriks Portfolio repository! This project is a comprehensive portfolio website for Jiriks, a talented and experienced photographer with a passion for capturing moments and telling stories through photography.
+Welcome to the JiriksFocus repository! This project is a comprehensive portfolio website for Jiriks, a talented and experienced photographer with a passion for capturing moments and telling stories through photography.
 
 ## Introduction
 
-Jiriks Portfolio is a visually stunning and user-friendly website designed to showcase Jiriks's photography portfolio, services, and accomplishments. The website provides an immersive experience for visitors to explore Jiriks's work and learn more about his journey as a photographer.
+JiriksFocus is a visually stunning and user-friendly website designed to showcase Jiriks's photography portfolio, services, and accomplishments. The website provides an immersive experience for visitors to explore Jiriks's work and learn more about his journey as a photographer.
 
 ## Features
 
@@ -21,7 +21,7 @@ Jiriks Portfolio is a visually stunning and user-friendly website designed to sh
 
 ## Visit the Website
 
-Explore Jiriks's photography portfolio by visiting the [Portfolio Website](https://jiriksportfolio.netlify.app "Jiriks Porfolio Website")
+Explore Jiriks's photography portfolio by visiting the [Portfolio Website](https://jiriksportfolio.netlify.app "JiriksFocus Website")
 
 ## License
 
