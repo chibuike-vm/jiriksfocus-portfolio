@@ -28,6 +28,16 @@ const Wrapper = styled.section`
         font-size: 1rem;
     }
 
+    span {
+        margin: 0;
+        letter-spacing: 0.2rem;
+        color: #f0fdfa;
+    }
+
+    .sub-title {
+        color: #fef9c3;
+    }
+
     a {
         text-decoration: none;
         color: #f0fdfa;
@@ -47,7 +57,10 @@ const Footer = () => {
                     );
                 })}
             </div>
-            <h3>&copy; 2024, All Rights Reserved.</h3>
+            <h3>
+                &copy; 2024 <span>Jiriks</span>
+                <span className="sub-title">Focus</span>, All Rights Reserved.
+            </h3>
         </Wrapper>
     );
 };

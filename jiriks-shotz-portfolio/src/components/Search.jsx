@@ -13,7 +13,7 @@ const Wrapper = styled.section`
         width: 70%;
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
-        padding-left: 0.5rem;
+        padding: 0.25rem;
     }
 
     input[type="submit"] {
@@ -22,10 +22,11 @@ const Wrapper = styled.section`
         color: #f9fafb;
         border-top-right-radius: 5px;
         border-bottom-right-radius: 5px;
+        padding: 0.25rem;
     }
 
     div {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         border-radius: 5px;
         box-shadow: 0 0 0.4rem;
