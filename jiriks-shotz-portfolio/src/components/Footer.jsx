@@ -59,7 +59,7 @@ const Footer = () => {
             </div>
             <h3>
                 &copy; 2024 <span>Jiriks</span>
-                <span className="sub-title">Focus</span>, All Rights Reserved.
+                <span className="sub-title">Focus,</span> All Rights Reserved.
             </h3>
         </Wrapper>
     );
