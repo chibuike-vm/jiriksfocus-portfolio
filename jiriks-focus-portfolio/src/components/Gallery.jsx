@@ -93,7 +93,7 @@ const Wrapper = styled.section`
 const Gallery = () => {
     const { searchValue } = useGlobalContext();
 
-    let { isLoading, isError, error, data } = useQuery({
+    const { isLoading, isError, error, data } = useQuery({
         queryKey: ["search", `${searchValue === "" ? "wedding" : searchValue}`],
         queryFn: async () => {
             const response = await axios(
