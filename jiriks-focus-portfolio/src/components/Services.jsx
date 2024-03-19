@@ -28,14 +28,13 @@ const Wrapper = styled.section`
 
     @media only screen and (width >= 768px) {
         div {
-            width: 20rem;
-            padding: 0;
+            width: 100%;
             margin-top: 0rem;
         }
 
         article {
             display: grid;
-            grid-template-columns: repeat(2, max-content);
+            grid-template-columns: repeat(2, 1fr);
             justify-content: space-evenly;
             grid-row-gap: 4rem;
             grid-column-gap: 3rem;
@@ -44,7 +43,7 @@ const Wrapper = styled.section`
 
     @media only screen and (width >= 1200px) {
         article {
-            grid-template-columns: repeat(3, max-content);
+            grid-template-columns: repeat(3, 1fr);
         }
     }
 `;
