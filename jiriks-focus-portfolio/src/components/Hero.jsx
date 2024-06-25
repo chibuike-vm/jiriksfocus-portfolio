@@ -5,9 +5,9 @@ import { descriptiveText } from "../sites-data/data";
 import styled from "styled-components";
 
 const Wrapper = styled.section`
-    width: 90%;
+    width: 100%;
     margin: 2rem auto;
-    margin-top: 4.5rem;
+    margin-top: 3rem;
 
     div {
         padding: 1rem;
@@ -16,7 +16,7 @@ const Wrapper = styled.section`
     .cursor {
         display: inline-block;
         width: 2px;
-        height: 30px;
+        height: 25px;
         background-color: #451a03;
         animation: blink-animation 1s infinite step-start;
         transform: translateY(25%);
@@ -29,9 +29,9 @@ const Wrapper = styled.section`
     }
 
     p {
-        font-size: 1.35rem;
+        font-size: 1.1rem;
         letter-spacing: 0.1rem;
-        line-height: 2;
+        line-height: 1.9;
         text-align: center;
         font-weight: 700;
     }

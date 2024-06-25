@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { footer } from "../sites-data/data";
 
 const Wrapper = styled.section`
-    margin-top: 3.5rem;
+    margin-top: 1.5rem;
 
     .footer-links-container {
         display: grid;
@@ -30,12 +30,8 @@ const Wrapper = styled.section`
 
     span {
         margin: 0;
-        letter-spacing: 0.2rem;
+        letter-spacing: 0.05rem;
         color: #f0fdfa;
-    }
-
-    .sub-title {
-        color: #fef9c3;
     }
 
     a {
@@ -58,8 +54,7 @@ const Footer = () => {
                 })}
             </div>
             <h3>
-                &copy; 2024 <span>Jiriks</span>
-                <span className="sub-title">Focus,</span> All Rights Reserved.
+                &copy; 2024 <span>JiriksFocus,</span> All Rights Reserved.
             </h3>
         </Wrapper>
     );

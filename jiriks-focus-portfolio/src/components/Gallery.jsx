@@ -39,17 +39,32 @@ const LoadingWrapper = styled.section`
     }
 `;
 
+const ErrorWrapper = styled.section`
+    h2 {
+        margin: 2rem 0;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    span {
+        color: #db2777;
+    }
+`;
+
 const Wrapper = styled.section`
-    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 0.6rem;
+    grid-row-gap: 1rem;
+    width: 100%;
     margin: 0 auto;
+    margin-bottom: 3rem;
 
     div {
-        width: 90%;
-        margin: 0 auto;
-        padding: 0.3rem;
+        grid-column-start: span 6;
+        padding: 0.1rem;
         border-radius: 2px;
-        box-shadow: 0 0 0.4rem;
-        margin-bottom: 1.5rem;
+        box-shadow: 0 0 0.2rem;
     }
 
     img {
@@ -57,36 +72,24 @@ const Wrapper = styled.section`
         display: block;
     }
 
-    h2 {
-        margin: 2rem 0;
-        text-align: center;
-        font-size: 1.2rem;
-        grid-column: span 3;
-    }
-
-    span {
-        color: #f87171;
-        font-size: 1.35rem;
-    }
-
     h3 {
         text-align: center;
     }
 
     @media only screen and (width >= 768px) {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: space-evenly;
-        grid-gap: 2rem;
+        grid-column-gap: 0.8rem;
 
         div {
-            width: 100%;
-            margin-bottom: 0;
+            grid-column-start: span 4;
         }
     }
 
     @media only screen and (width >= 1200px) {
-        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1rem;
+
+        div {
+            grid-column-start: span 3;
+        }
     }
 `;
 
@@ -117,12 +120,12 @@ const Gallery = () => {
 
     if (isError) {
         return (
-            <Wrapper>
+            <ErrorWrapper>
                 <h2>
                     <span>Error: </span>
                     {error.message}
                 </h2>
-            </Wrapper>
+            </ErrorWrapper>
         );
     }
 

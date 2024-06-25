@@ -393,6 +393,7 @@ html {
 .footer-sub-container {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0.5rem;
 }
 
 header {
@@ -446,8 +447,8 @@ body {
     ======================
 */
 p {
-    font-size: 1.1rem;
-    letter-spacing: 0.1rem;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
     line-height: 1.3;
     padding: 0.5rem;
 }

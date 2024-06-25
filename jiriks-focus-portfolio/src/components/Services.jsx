@@ -2,22 +2,23 @@ import styled from "styled-components";
 import { services } from "../sites-data/data";
 
 const Wrapper = styled.section`
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 5rem;
 
     div {
-        margin-top: 3rem;
-        padding: 1rem;
+        margin-top: 1.2rem;
+        padding: 0.2rem;
         width: 100%;
         border-radius: 10px;
-        box-shadow: 0 0 0.5rem;
+        box-shadow: 0 0 0.2rem;
     }
 
     h2 {
         margin: 2rem 0;
         text-align: center;
         text-transform: capitalize;
+        font-size: 1.2rem;
     }
 
     h3 {
@@ -36,8 +37,8 @@ const Wrapper = styled.section`
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             justify-content: space-evenly;
-            grid-row-gap: 4rem;
-            grid-column-gap: 3rem;
+            grid-row-gap: 1.2rem;
+            grid-column-gap: 1rem;
         }
     }
 

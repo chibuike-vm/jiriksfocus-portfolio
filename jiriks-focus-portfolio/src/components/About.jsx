@@ -2,21 +2,21 @@ import styled from "styled-components";
 import aboutImg from "../assets/images/profile.svg";
 
 const Wrapper = styled.section`
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     margin-top: 5rem;
 
     div {
-        padding: 1rem;
+        padding: 0.2rem;
         border-radius: 10px;
-        box-shadow: 0 0 0.5rem;
-        //background-color: #99f6e4;
+        box-shadow: 0 0 0.2rem;
     }
 
     h2 {
         margin: 2rem 0;
         text-align: center;
         text-transform: capitalize;
+        font-size: 1.2rem;
     }
 
     @media only screen and (width > 768px) {

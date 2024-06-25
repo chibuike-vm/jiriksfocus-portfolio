@@ -5,7 +5,7 @@ import { MdLightMode, MdDarkMode } from "react-icons/md";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
 
 const Wrapper = styled.section`
-    padding: 0.8rem;
+    padding: 0.6rem 0.5rem;
     position: fixed;
     left: 0;
     right: 0;
@@ -23,7 +23,7 @@ const Wrapper = styled.section`
 
     h1 {
         margin: 0;
-        letter-spacing: 0.2rem;
+        letter-spacing: 0.05rem;
         font-size: 1.3rem;
         color: #f0fdfa;
     }
@@ -50,7 +50,7 @@ const Wrapper = styled.section`
         left: 0;
         right: 0;
         height: 100%;
-        padding: 1rem;
+        padding: 0.5rem;
     }
 
     .links-container {
@@ -79,10 +79,6 @@ const Wrapper = styled.section`
 
     .hide-navbar {
         display: none;
-    }
-
-    span {
-        color: #fef9c3;
     }
 
     .menu-button {
@@ -138,7 +134,6 @@ const Wrapper = styled.section`
 
         h1 {
             align-self: center;
-            padding-left: 0.9rem;
         }
 
         a {
@@ -154,10 +149,7 @@ const Header = () => {
     return (
         <Wrapper id="home">
             <article className="header-container">
-                <h1>
-                    Jiriks<span>Focus</span>
-                </h1>
-
+                <h1>JiriksFocus</h1>
                 <IoMdMenu
                     onClick={() => setIsNavbarOpen(!isNavbarOpen)}
                     className="menu-button"
