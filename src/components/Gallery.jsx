@@ -54,8 +54,7 @@ const ErrorWrapper = styled.section`
 const Wrapper = styled.section`
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 0.6rem;
-    grid-row-gap: 1rem;
+    grid-gap: 0.6rem;
     width: 100%;
     margin: 0 auto;
     margin-bottom: 3rem;
@@ -65,11 +64,13 @@ const Wrapper = styled.section`
         padding: 0.1rem;
         border-radius: 2px;
         box-shadow: 0 0 0.2rem;
+        height: 300px;
     }
 
     img {
         width: 100%;
-        display: block;
+        height: 100%;
+        object-fit: cover;
     }
 
     h3 {
@@ -77,7 +78,7 @@ const Wrapper = styled.section`
     }
 
     @media only screen and (width >= 768px) {
-        grid-column-gap: 0.8rem;
+        grid-gap: 0.8rem;
 
         div {
             grid-column-start: span 4;
@@ -85,7 +86,7 @@ const Wrapper = styled.section`
     }
 
     @media only screen and (width >= 1200px) {
-        grid-column-gap: 1rem;
+        grid-gap: 1rem;
 
         div {
             grid-column-start: span 3;
@@ -144,7 +145,7 @@ const Gallery = () => {
                                 src={regular}
                                 alt={alt_description}
                                 height="300"
-                                width="400"
+                                width="300"
                             />
                         </div>
                     );
