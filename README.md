@@ -8,16 +8,16 @@ JiriksFocus is a visually stunning and user-friendly website designed to showcas
 
 ## Features
 
-- Dynamic Text Display: Engage with a dynamic text display feature simulating typing out text, providing an interactive experience for visitors.
-- Responsive Design: Ensures optimal viewing experience across a wide range of devices, from desktops to mobile phones.
+-   Dynamic Text Display: Engage with a dynamic text display feature simulating typing out text, providing an interactive experience for visitors.
+-   Responsive Design: Ensures optimal viewing experience across a wide range of devices, from desktops to mobile phones.
 
-- Service Offerings: Explore the variety of photography services offered by Jiriks, including portraits, event photography, landscape photography, product photography, and travel photography.
-- About Me Section: Learn more about Jiriks, his background, and his passion for photography through an informative "About Me" section.
+-   Service Offerings: Explore the variety of photography services offered by Jiriks, including portraits, event photography, landscape photography, product photography, and travel photography.
+-   About Me Section: Learn more about Jiriks, his background, and his passion for photography through an informative "About Me" section.
 
 ## Major Technologies Used
 
-- Frontend: Built with React.js for a fast and interactive user interface.
-- Backend: Utilizes Express.js for server-side logic and API endpoints to handle data retrieval and processing.
+-   Frontend: Built with JavaScript, React.js, Vanilla CSS, Styled-Component CSS, HTML.
+-   Backend: Utilizes Node.js and Express.js for server-side logic and API endpoints to handle data retrieval and processing.
 
 ## Visit the Website
 
