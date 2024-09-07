@@ -101,7 +101,7 @@ const Gallery = () => {
         queryKey: ["search", `${searchValue === "" ? "wedding" : searchValue}`],
         queryFn: async () => {
             const response = await axios(
-                `https://jiriks-focus.onrender.com/search-photos/${searchValue}`
+                `https://jiriksfocus.onrender.com/search-photos/${searchValue}`
             );
             return response.data.results;
         },
