@@ -57,7 +57,7 @@ const Wrapper = styled.section`
     grid-gap: 0.6rem;
     width: 100%;
     margin: 0 auto;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 
     div {
         grid-column-start: span 6;

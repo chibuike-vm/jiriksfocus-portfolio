@@ -2,14 +2,37 @@ import styled from "styled-components";
 import { footer } from "../sites-data/data";
 
 const Wrapper = styled.section`
-    margin-top: 1.5rem;
+    margin-top: 0.5rem;
 
     .footer-links-container {
         display: grid;
         grid-template-columns: repeat(4, min-content);
         grid-column-gap: 1.5rem;
-        justify-content: center;
-        padding: 1.5rem;
+        padding: 1.2rem 0;
+    }
+
+    h1,
+    h2,
+    button {
+        font-size: 1rem;
+        color: #f0fdfa;
+        margin: 0.5rem 0;
+    }
+
+    h1 {
+        text-transform: uppercase;
+    }
+
+    button {
+        background-color: #fcd34d;
+        padding: 4px 8px;
+        border-radius: 4px;
+        border-color: white;
+        margin: 0;
+    }
+
+    button a {
+        color: black;
     }
 
     .footer-links {
@@ -22,10 +45,9 @@ const Wrapper = styled.section`
     }
 
     h3 {
-        text-align: center;
-        padding-bottom: 1.3rem;
+        padding-bottom: 0.5rem;
         margin: 0;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     span {
@@ -43,6 +65,13 @@ const Wrapper = styled.section`
 const Footer = () => {
     return (
         <Wrapper>
+            <div className="contact">
+                <h1>contact</h1>
+                <h2>+2347*********</h2>
+                <button type="button" className="btn">
+                    <a href="mailto:test@email.com">Send me an email</a>
+                </button>
+            </div>
             <div className="footer-links-container">
                 {footer.map((eachFooterData) => {
                     const { id, social, href } = eachFooterData;

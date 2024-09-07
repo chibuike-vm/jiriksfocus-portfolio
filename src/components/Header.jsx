@@ -98,6 +98,7 @@ const Wrapper = styled.section`
         grid-template-columns: 1fr 2fr;
         box-shadow: 0 0 0;
         background-image: none;
+        padding: 0 0;
 
         .icon,
         .close-button,

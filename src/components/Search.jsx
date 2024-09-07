@@ -3,7 +3,7 @@ import { useGlobalContext } from "./context";
 
 const Wrapper = styled.section`
     width: 100%;
-    margin: 5rem auto 3rem auto;
+    margin: 3rem auto 2rem auto;
 
     form {
         width: 100%;
@@ -33,7 +33,7 @@ const Wrapper = styled.section`
     }
 
     h2 {
-        margin: 2rem 0;
+        margin: 0.5rem 0;
         text-transform: capitalize;
         font-size: 1.2rem;
     }
@@ -46,6 +46,7 @@ const Wrapper = styled.section`
     h3 {
         font-weight: 600;
         font-size: 1.05rem;
+        margin-top: 0.5rem;
     }
 
     @media only screen and (width >= 768px) {

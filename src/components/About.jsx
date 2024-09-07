@@ -4,7 +4,7 @@ import aboutImg from "../assets/images/profile.svg";
 const Wrapper = styled.section`
     width: 100%;
     margin: 0 auto;
-    margin-top: 5rem;
+    margin-top: 3rem;
 
     div {
         padding: 0.2rem;
@@ -13,7 +13,7 @@ const Wrapper = styled.section`
     }
 
     h2 {
-        margin: 2rem 0;
+        margin: 1rem 0;
         text-align: center;
         text-transform: capitalize;
         font-size: 1.2rem;

@@ -426,8 +426,13 @@ body {
 .darkmode .loader p,
 .darkmode nav > .close-button,
 .darkmode div > .icon,
-.darkmode nav > .mode-button {
+.darkmode nav > .mode-button,
+.darkmode .btn a {
     color: #fffbeb;
+}
+
+.darkmode button.btn {
+    background-color: #974210;
 }
 
 .darkmode .loader > div > p {
